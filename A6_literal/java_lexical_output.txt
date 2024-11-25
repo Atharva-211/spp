@@ -1,0 +1,82 @@
++--------+---------------+---------------+---------------+
+| Line No | Lexeme        | Token         | Token Value   |
++--------+---------------+---------------+---------------+
+| 1      | public        | KEYWORD       | 1             |
+| 1      | class         | KEYWORD       | 0             |
+| 1      | Example       | IDENTIFIER    | 0             |
+| 1      | {             | DELIMITER     | 2             |
+| 2      | public        | KEYWORD       | 1             |
+| 2      | static        | KEYWORD       | 4             |
+| 2      | void          | KEYWORD       | 5             |
+| 2      | main(String[] | IDENTIFIER    | 1             |
+| 2      | args)         | IDENTIFIER    | 2             |
+| 2      | {             | DELIMITER     | 2             |
+| 3      | int           | KEYWORD       | 6             |
+| 3      | x             | IDENTIFIER    | 3             |
+| 3      | =             | OPERATOR      | 4             |
+| 3      | 10;           | CONSTANT      | 10;           |
+| 4      | float         | KEYWORD       | 7             |
+| 4      | y             | IDENTIFIER    | 4             |
+| 4      | =             | OPERATOR      | 4             |
+| 4      | 20.5f;        | CONSTANT      | 20.5f;        |
+| 5      | boolean       | KEYWORD       | 9             |
+| 5      | isReady       | IDENTIFIER    | 5             |
+| 5      | =             | OPERATOR      | 4             |
+| 5      | true;         | IDENTIFIER    | 6             |
+| 7      | if            | KEYWORD       | 10            |
+| 7      | (x            | IDENTIFIER    | 7             |
+| 7      | <             | OPERATOR      | 7             |
+| 7      | y)            | IDENTIFIER    | 8             |
+| 7      | {             | DELIMITER     | 2             |
+| 8      | x++;          | IDENTIFIER    | 9             |
+| 9      | }             | DELIMITER     | 3             |
+| 9      | else          | KEYWORD       | 11            |
+| 9      | {             | DELIMITER     | 2             |
+| 10     | x--;          | IDENTIFIER    | 10            |
+| 11     | }             | DELIMITER     | 3             |
+| 13     | for           | KEYWORD       | 12            |
+| 13     | (int          | IDENTIFIER    | 11            |
+| 13     | i             | IDENTIFIER    | 12            |
+| 13     | =             | OPERATOR      | 4             |
+| 13     | 0;            | CONSTANT      | 0;            |
+| 13     | i             | IDENTIFIER    | 12            |
+| 13     | <             | OPERATOR      | 7             |
+| 13     | 5;            | CONSTANT      | 5;            |
+| 13     | i++)          | IDENTIFIER    | 13            |
+| 13     | {             | DELIMITER     | 2             |
+| 14     | System.out.println("Value | IDENTIFIER    | 14            |
+| 14     | of            | IDENTIFIER    | 15            |
+| 14     | x:            | IDENTIFIER    | 16            |
+| 14     | "             | IDENTIFIER    | 17            |
+| 14     | +             | OPERATOR      | 0             |
+| 14     | x);           | IDENTIFIER    | 18            |
+| 15     | }             | DELIMITER     | 3             |
+| 17     | return;       | IDENTIFIER    | 19            |
+| 18     | }             | DELIMITER     | 3             |
+| 19     | }             | DELIMITER     | 3             |
++--------+---------------+---------------+---------------+
+
++--------+---------------+
+| Index  | Symbol        |
++--------+---------------+
+| 0      | Example       |
+| 1      | main(String[] |
+| 2      | args)         |
+| 3      | x             |
+| 4      | y             |
+| 5      | isReady       |
+| 6      | true;         |
+| 7      | (x            |
+| 8      | y)            |
+| 9      | x++;          |
+| 10     | x--;          |
+| 11     | (int          |
+| 12     | i             |
+| 13     | i++)          |
+| 14     | System.out.println("Value |
+| 15     | of            |
+| 16     | x:            |
+| 17     | "             |
+| 18     | x);           |
+| 19     | return;       |
++--------+---------------+
